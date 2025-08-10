@@ -1,3 +1,6 @@
+// This file is no longer used for Vercel deployment.
+// Backend logic has been moved to api/send-mail.js as a Vercel serverless function.
+// You may use this file for local development only.
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
