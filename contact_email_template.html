@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Contact Form Submission</title>
+  <style>
+    body {
+      background: #f4f6fb;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: #fff;
+      max-width: 500px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 32px 28px;
+      border-top: 6px solid #4f8cff;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .header h2 {
+      color: #4f8cff;
+      margin: 0 0 8px 0;
+      font-size: 1.6em;
+      letter-spacing: 1px;
+    }
+    .info {
+      margin-bottom: 18px;
+    }
+    .info b {
+      color: #222;
+      display: inline-block;
+      min-width: 80px;
+    }
+    .message {
+      background: #f0f4ff;
+      border-left: 4px solid #4f8cff;
+      padding: 14px 18px;
+      border-radius: 6px;
+      color: #333;
+      font-size: 1.05em;
+      margin-top: 10px;
+      white-space: pre-line;
+    }
+    .footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.95em;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>📩 New Contact Form Submission</h2>
+    </div>
+    <div class="info"><b>Website:</b> {{website}}</div>
+    <div class="info"><b>From:</b> {{email}}</div>
+    <div class="info"><b>Name:</b> {{name}}</div>
+    <div class="info"><b>Message:</b>
+      <div class="message">{{message}}</div>
+    </div>
+    <div class="footer">
+      This message was sent via your website contact form.
+    </div>
+  </div>
+</body>
+</html>
